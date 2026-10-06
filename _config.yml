@@ -1,0 +1,40 @@
+# Theme: https://github.com/amitmerchant1990/reverie
+remote_theme: amitmerchant1990/reverie
+
+name: Hari
+author: Hari
+description: Notes and writing
+avatar: https://github.com/harii82.png
+
+url: https://harii82.github.io
+baseurl: ""
+
+footer-links:
+  github: harii82
+  rss: rss
+
+permalink: /:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+sass:
+  style: :compressed
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: /page:num/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
