@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Hi, I'm Hari. This is my little corner of the internet.
+Hi, I'm Hari. This is my corner of the internet.

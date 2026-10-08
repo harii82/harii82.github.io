@@ -11,7 +11,6 @@ baseurl: ""
 
 footer-links:
   github: harii82
-  rss: rss
 
 permalink: /:title/
 
