@@ -25,9 +25,6 @@
             <nav>
               <a href="{{ site.baseurl }}/">Home</a>
               <a href="{{ site.baseurl }}/about">About</a>
-              <a href="{{ site.baseurl }}/projects">Projects</a>
-              <a href="{{ site.baseurl }}/now">Now</a>
-              <a href="{{ site.baseurl }}/contact">Contact</a>
               <a href="{{ site.baseurl }}/archive">Archive</a>
             </nav>
           </header>
@@ -35,6 +32,7 @@
       </div>
       <div class="wrapper-main">
         <div id="main" role="main" class="container">
+          {% if site.wip %}<p style="background:#fff3cd;color:#664d03;border:1px solid #ffe69c;border-radius:4px;padding:8px 12px;text-align:center;">🚧 Work in progress: this site is still being built.</p>{% endif %}
           {{ content }}
         </div>
       </div>
