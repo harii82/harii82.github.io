@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Linux basics"
+date:   2020-02-21 12:50:09 +0400
+categories: Linux 
+---
+draft page to be  completed soon
+
+### Linux
+
+Linux is the operating system of the developers, webservers and super computers. The top 500 supercomputers use linux as their operating system.
+
+Linux operating systems are software distributions (also known as distros) which has linux kernel underneath the operating system.
+
+A distribution a collection of programs  so organised to function as an operating system. It will also have its own package manager where you can upgrade and add and remove programs from a software repository.  These different programs existing as independent projects else where on the internet  will work together to act as a coherent single system.
+
+There are various distros and family of distros.  
+
+The major distros are
+- debian (somehow i consider debian to be good for my work)
+- Ubuntu
+- Linuxmint
+- Red hat 
+- CentOS
+- Open suse
+
+
+Ubuntu is derived from Debian and some distros like linux mint are derived from ubuntu . Hence debian can also be considered as headfigure of a family of distros. 
+
+### filesystem commands
+
+
+
+
+
+
+```sh
+
+pwd             ### show present working directory
+ls              ### list files
+ls -F           ###  list files , also specially denoting  directories,links , files
+ls -F /Users    ###  list files flag -F argument path to directory is given to that argument
+
+
+cd              ### change to users home directory 
+cd .            ### . denotes the same directory
+cd ..           ###  .. denotes parent directory
+cd ../..        ### it goes on like that
+cd ~            ### home directory
+cd ~/.emacs.d   ###change to directory .emacs.d under home directory
+
+
+mkdir  new      ### creates a directory 'new' at current directory
+mkdir ~/new     ### creates a directory 'new' at home directory
+
+```
+
+
+

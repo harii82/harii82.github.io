@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "C++ "
+date:   2020-11-30 12:50:09 +0400
+categories: cpp  
+---
+This page is work in progress.
+
+
+### Introduction
+
+A computer can only carry out very simple or low level instructions defined by the instruction set architecture of the microprocessor.  A set of simple instructions so combined in a way to carry out complex tasks at very high speed, with great precision and with accuracy is what makes them special and useful. 
+
+The simple instructions sequentially arranged in microprocessor's own language or binary is made so that it runs in a specific "environment". This specific "run environment" are resources such as a specific operating system, The presence of certain environment variables or the availability of system or third party libraries or presence of certain devices. Binaries run in tandem with instructions available from such other resources.

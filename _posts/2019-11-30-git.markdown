@@ -1,0 +1,89 @@
+---
+layout: post
+title:  " Git basics"
+date:   2019-12-07 12:50:09 +0400
+categories: git warning:incomplete warning:draft
+---
+draft page to be  completed soon
+
+# git
+
+### *Introduction*
+git is a version control software. 
+It keeps track of a project by keeping track of changes and versioning. 
+github is the top website for hosting our git projects also provides social networking way of interaction between contributors.
+
+*_Installation instructions_*
+In windows download the installer from [git website](https://git-scm.com/download/win).
+Git is to be installed using below command in Mac OS
+
+``` sh
+brew install git
+```
+for Debian flavored linux distributions 
+``` sh
+sudo apt install git
+```
+
+
+*_ Init*_ 
+
+You navigate yourself to the root folder of the project.
+Once you are inside the folder , run the below command to initiate git on that folder
+git will create a .git folder inside the folder. 
+All the generated content used by git to track will generated and stored inside .git folder.
+
+``` console
+git init
+```
+
+*_Addition of files_*
+```sh
+git add -all
+```
+*_commit_* 
+```bash
+git commit -m "replace with some decent message" 
+```
+*_push_*
+```bash
+git push
+```
+
+*_reset_*
+``` bash
+git checkout --orphan newBranch
+git add -A  # Add all files and commit them
+git commit
+git branch -D master  # Deletes the master branch
+git branch -m master  # Rename the current branch to master
+git push -f origin master  # Force push master branch to github
+git gc --aggressive --prune=all     # remove the old files
+```
+
+### issues
+
+make issues at git hub 
+issues created will be assigned to some participant
+
+### branches
+
+make branches to solve problems
+make branches to make new features
+
+### pull requests
+
+pull requests are made to make the revisions accepted in to the repository
+some code review may be done to 
+
+
+### merge 
+
+A finalised branch will be merged into the master branch
+
+### 
+
+commits in master branch can be configured to result in certain actions such testing and building and releases 
+which is basically dev ops  , agility etc.
+
+
