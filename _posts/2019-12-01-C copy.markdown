@@ -1,0 +1,105 @@
+---
+layout: post
+title:  "C basics"
+date:   2019-11-30 12:50:09 +0400
+categories: c notes
+---
+## Intro
+
+C programming language was made in the 70s bell laborataries as part of unix of operating system development. C was made by Dennis Ritchie and Ken Thompson. Ken thompson was also the architect of B a typeless interpreted language used prior to C in programming UNIX for PDP-7. C was developed to rewrite UNIX OS for PDP-11 and to make it in such a way the OS is portable between machines in this case UNIX OS in PDP-11 to the devices that may be made in the future.
+
+Dennis Richie and Brian Kernighan wrote  "The C programming language" , This book was written as a reference manual, which became standard document and guidelines for the language.
+
+C was later standardised by ANSI and later ISO.
+
+- 1990 C - revision
+- 1999 C - variable declarations inside loop and every where
+- 2011 C - threading and other things
+
+POSIX is  a standard for interoperatbility of various system libraries and system functions which guides the UNIX system development.
+
+## references
+[The Essential C ](http://cslibrary.stanford.edu/101/EssentialC.pdf "stanford into C")
+Youtube channel ashley mills - video playlist learn to program with c.
+
+source files are prepared as plain text files which are prepared by arranging literal constants aka charachters and numbers (known to C) as per the rules of the language.source file editing can be done any text editor. These source files are fed into the compiler.
+Compiler produces an output binary suitable for the target environment which can be run. This process is a multistage process involving many intermediate stages. Pre processing , object file generation , linking etc are intermediate stages in compilation.
+
+
+In big projects where many source files are present. The source files are compiled together sequentially in a particular order to obtain what is called object files. Object files will then be linked to make the binary file of the program.
+
+Many people can edit code in  basic text editor such as notepad. 
+
+Advanced editors like emacs support the programmer by code highlighting, syntax auto completion etc.
+
+Heavy software like Visual Studio., all what we do is editing the source. 
+
+
+
+
+gcc is a great c compiler , Apple has switched from gcc to clang as their main compilor.
+
+
+
+
+###  first program - [K&R]
+
+Write a first program to print hello world to the screen. 
+
+
+``` c
+
+#include <stdio.h>
+int main()  {
+    printf("hello world!");
+}
+```
+
+
+A statement is the elemental unit of a program.
+Its syntax has to be correct as per the programming language.
+Each statement is ended by ' ; '
+A collection of statements is called a function. 
+A program must have atleast one function called main to be a valid c program.
+
+### comments
+comments are ignored by the compiler. 
+comments are spaces inside the code to where additional descriptions are made . 
+we also use comment mechanism to selectively turn on and turn off parts of code during compilations etc.
+comments are removed during the preprocessing process.
+
+```c
+//  this is a single line comment.
+// Every thing right of // in a program is ignored by the compiler.
+
+/*
+this is a multiline comment  
+Do not try to nest multiline  comments. it never works 
+*/
+```
+
+### preprocessing
+
+Line starting with # is preprocessor directive.
+Preprocessing is the first stage of compilation.
+It textual replacement of the Preprocessing directive line with its expansion (expands into a header file)
+```c
+#include <stdio.h>        // pre processor substitutes this line by including  stdio.h header file (a file of declrations) by looking in  default header directories
+#include "path/to/base.h" //substitutes this line by including file base.h 
+#define x 10             //the space in between does not matter 
+#undef x                //undefines x as 10 
+#define x 20            //redefines  x as 20
+```
+### control flow using if 
+``` c
+# include <stdio.h>
+int main()  {   
+    int i = 1;
+if (i>0)
+    printf("value of i is %d",i);
+    else 
+    printf("value of i is invalid");
+}
+```
+
+### loops
